@@ -1,5 +1,8 @@
 # Crydra
 
+A ghidra plugin with cryfind embeded  
+https://github.com/oalieno/cryfind
+
 ## Installatioin
 
 1. `git clone` this repo to ~/
