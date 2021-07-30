@@ -8,6 +8,7 @@ https://github.com/oalieno/cryfind
 1. `git clone` this repo to ~/
 2. Add repo directory to  or link to any of  ghidra script directory 
 3. `python3 -m pip install -r requirements.txt`
+4. Change `SCRIPT_PATH` in Crydra.py to script path
 
 ## Usage
 When debuging PE file, open Display Script Manager.
