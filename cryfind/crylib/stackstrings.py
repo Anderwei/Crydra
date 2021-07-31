@@ -87,10 +87,8 @@ def stackstrings(binary):
     for function in functions:
         # get basic blocks table -> {0x01: block1, 0x06: block2, ...}
         blocks, root = {}, None
-        for block in r.cmdj(f'abj {function}'):
-            blocks[block['addr']] = block
-            if root is None:
-                root = block
+        block = r.cmdj(f'abj {function}')
+        blocks[block['addr']] = block
 
         if thunked(blocks):
             continue
